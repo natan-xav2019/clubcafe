@@ -9,13 +9,13 @@
 
 body {
     color: var(--primaria);
-    border-bottom: 1px solid var(--cor-semedestaque);
 }
 
 header {
     background-color: var(--secundaria);
     color: var(--primaria);
     padding-bottom: 10px;
+    border-bottom: 1px solid var(--cor-semedestaque);
 }
 
 header .grao-cafe {
@@ -40,3 +40,66 @@ header .grao-cafe {
     color: var(--primaria);
     opacity: 1;
 }
+
+main {
+    font-size: 1.4em;
+    overflow: hidden;
+}
+
+main img#caneca-branca {
+    max-height: 25vw;
+    border-radius: 50%;
+    border: 2px solid var(--cor-semedestaque);
+
+    transition: transform 0.5s;
+}
+
+main img#caneca-branca:hover {
+	transform: scale(1.1);
+}
+
+main .grupo-caixas {
+    margin-top: 2rem;
+    display: flex;
+    align-items: center;
+
+    gap: 20px;
+}
+
+main div.caixa {
+    height: 350px;
+    width: max-content;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    background-color: var(--secundaria);
+    border: 2px solid var(--cor-semedestaque); 
+
+    padding: 30px;
+    border-radius: 30px;
+    
+    transition: transform .8s;
+}
+
+main div.caixa:hover {
+    transform: scale(1.03);
+}
+
+main div.caixa > span {
+
+    font-size: 2em;
+    margin-bottom: 1rem;
+}
+
+main div.caixa > h4 {
+
+    font-size: 1.3em;
+}
+
+main div.caixa > p {
+
+    font-size: 0.8em;
+}
+
