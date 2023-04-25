@@ -3,12 +3,17 @@
 :root {
     --primaria: #5f3319;
     --secundaria:#fff9f5;
+    --terciaria:#ffe1e1;
     --cor-semedestaque: #e06219;
     --cor-meio-termo: #AD5811;
 }
 
 body {
+    background-color: white;
     color: var(--primaria);
+
+    margin: 0px;
+    padding: 0px;
 }
 
 header {
@@ -19,7 +24,7 @@ header {
 }
 
 header .grao-cafe {
-    height: 300px;
+    height: 400px;
     width: 100vw;
     background-color: var(--cor-meio-termo);
     background: url(image/bg-cafe.jpg) no-repeat;
@@ -42,20 +47,48 @@ header .grao-cafe {
 }
 
 main {
+    background-color: white;
     font-size: 1.4em;
     overflow: hidden;
+
+}
+
+main div a.botao-destaque {
+    background-color: var(--cor-semedestaque);
+    border: 1px solid var(--primaria);
+    font-size: 0.9em;
+    font-weight: 600;
+}
+
+main div a.botao-destaque:hover {
+    background-color: #66361a;
+    border: 1px solid var(--primaria);
+    color: white;
+}
+
+main div a.botao {
+    background-color: var(--secundaria);
+    border: 1px solid var(--cor-semedestaque);
+    font-size: 0.9em;
+    font-weight: 600;
+}
+
+main div a.botao:hover {
+    background-color: var(--cor-semedestaque);
+    border: 1px solid var(--primaria);
+    color: white;
 }
 
 main img#caneca-branca {
-    max-height: 25vw;
+    max-height: 350px;
     border-radius: 50%;
     border: 2px solid var(--cor-semedestaque);
 
-    transition: transform 0.5s;
+    transition: transform 0.8s;
 }
 
 main img#caneca-branca:hover {
-	transform: scale(1.1);
+	transform: scale(1.05);
 }
 
 main .grupo-caixas {
@@ -67,17 +100,9 @@ main .grupo-caixas {
 }
 
 main div.caixa {
-    height: 350px;
-    width: max-content;
-
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-
     background-color: var(--secundaria);
     border: 2px solid var(--cor-semedestaque); 
 
-    padding: 30px;
     border-radius: 30px;
     
     transition: transform .8s;
@@ -90,7 +115,8 @@ main div.caixa:hover {
 main div.caixa > span {
 
     font-size: 2em;
-    margin-bottom: 1rem;
+
+    margin: 1rem 0;
 }
 
 main div.caixa > h4 {

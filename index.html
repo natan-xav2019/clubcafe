@@ -39,37 +39,83 @@
             <h1 class="text-center mt-2">Compre seu café</h1>
         </section>
     </header>
-    <main class="container">
+    <main class="flex-container py-3">
         <section class="row">
             <h1 class="text-center">Quem somos?</h1>
-            <div class="row px-4 align-items-center">
+            <div class="row row-cols-md-2 row-cols-1 px-4 align-items-center">
                 <div class="col">
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos cum perspiciatis
                         mollitia, quo aperiam quaerat quas, iste voluptatum est omnis quibusdam corrupti, ullam accusamus
                         quod consectetur eligendi quis ratione inventore!</p>
-                        <!-- Fazer botão para se escrever aqui -->
+                        <div class="d-flex justify-content-around mb-3">
+                            <a class="btn botao-destaque" href="#" role="button">Escrever-se</a>
+                            <a class="btn botao" href="#" role="button">Saiba mais</a>
+                        </div>
             </div>
                 <div class="col"><img id="caneca-branca" src="image/caneca-branca.jpg" alt="Caneca Branca"></div>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur
+                </p>
             </div>
-            <div class="grupo-caixas text-center">
-                <div class="caixa">
-                    <span class="material-symbols-outlined">event_available</span>
-                    <h4>Data marcada</h4>
-                    <p>Texto falando sobre cada etapa do produto.</p>
+            
+        </section>
+        <section class="container mt-3">
+            <div class="text-center row row-cols-md-3 row-cols-1 g-3 ml-5">
+                <div class="col">
+                    <div class="mb-3 p-2 caixa h-100">
+                        <span class="material-symbols-outlined">event_available</span>
+                        <h4>Data marcada</h4>
+                        <p>Texto falando sobre cada etapa do produto.</p>
+                    </div>
                 </div>
-                <div class="caixa">
-                    <span class="material-symbols-outlined">table_chart_view</span>
-                    <h4>Cada semana uma surpresa</h4>
-                    <p>Texto falando sobre cada etapa do produto.</p>
+                <div class="col">
+                    <div class="mb-3 p-2 caixa h-100">
+                        <span class="material-symbols-outlined">table_chart_view</span>
+                        <h4>Cada semana uma surpresa</h4>
+                        <p>Texto falando sobre cada etapa do produto.</p>
+                    </div>
                 </div>
-                <div class="caixa">
-                    <span class="material-symbols-outlined">home</span>
-                    <h4>Entrega em casa</h4>
-                    <p>Texto falando sobre cada etapa do produto.</p>
+                <div class="col">
+                    <div class="mb-3 p-2 caixa h-100">
+                        <span class="material-symbols-outlined">home</span>
+                        <h4>Entrega em casa</h4>
+                        <p>Texto falando sobre cada etapa do produto.</p>
+                    </div>
                 </div>
             </div>
         </section>
+        <section class="container mt-2">
+            <div id="carousel" class="carousel slide" data-bs-ride="true">
+                <div class="carousel-indicators">
+                  <button type="button" data-bs-target="#carousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                  <button type="button" data-bs-target="#carousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                  <button type="button" data-bs-target="#carousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                </div>
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img src="image/coffee-g940d20e08_640.jpg" class="d-block w-100" alt="...">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="image/coffee-gf4389df53_640.jpg" class="d-block w-100" alt="...">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="image/drink-g38ef8652a_640.jpg" class="d-block w-100" alt="...">
+                  </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carousel" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carousel" data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+              </div>
+        </section>
     </main>
+    <footer>
+        <p>so para ocupar espaço agora</p>
+    </footer>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.7/dist/umd/popper.min.js"
         integrity="sha384-zYPOMqeu1DAVkHiLqWBUTcbYfZ8osu1Nd6Z89ify25QV9guujx43ITvfi12/QExE"
         crossorigin="anonymous"></script>
