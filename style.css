@@ -23,12 +23,24 @@ header {
     border-bottom: 1px solid var(--cor-semedestaque);
 }
 
-header .grao-cafe {
+.grao-cafe {
     height: 400px;
     width: 100vw;
     background-color: var(--cor-meio-termo);
     background: url(image/bg-cafe.jpg) no-repeat;
     background-position: center center;
+    background-size: cover;
+    background-attachment: fixed;
+
+    box-shadow: -2px -3px 9px 0px rgba(0, 0, 0, 0.8);
+}
+
+.grao-cafe-grande {
+    height: 300px;
+    width: 100vw;
+    background-color: var(--cor-meio-termo);
+    background: url(image/bg-cafe-grande.jpg) no-repeat;
+    background-position: left bottom;
     background-size: cover;
     background-attachment: fixed;
 
@@ -80,7 +92,7 @@ main div a.botao:hover {
 }
 
 main img#caneca-branca {
-    max-height: 350px;
+    width: 100%;
     border-radius: 50%;
     border: 2px solid var(--cor-semedestaque);
 
@@ -129,3 +141,17 @@ main div.caixa > p {
     font-size: 0.8em;
 }
 
+#carousel {
+    width: 70vw; 
+    margin: auto;
+}
+
+.teste {
+    width: 80%;
+}
+
+@media screen AND (min-width: 768PX) {
+    #carousel {
+        width: 50vw;
+    }
+}
