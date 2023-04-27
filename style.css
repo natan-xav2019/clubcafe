@@ -24,7 +24,7 @@ header {
 }
 
 .grao-cafe {
-    height: 400px;
+    height: 350px;
     width: 100vw;
     background-color: var(--cor-meio-termo);
     background: url(image/bg-cafe.jpg) no-repeat;
