@@ -150,8 +150,62 @@ main div.caixa > p {
     width: 80%;
 }
 
+footer {
+    background-color: rgb(238, 255, 238);
+    padding: 100px 10px 10px 10px;
+}
+
+footer > section.container > div.row {
+    border-bottom: 2px solid greenyellow;
+}
+
+footer h4 {
+    font-weight: bolder;
+}
+
+footer p {
+    margin: 2.5rem 0;
+    font-size: 1.1em;
+}
+
+footer p.marca {
+    margin: 1.4rem 0;
+}
+
+footer ul > li {
+    list-style-type: none;
+    text-align: left;
+    margin-bottom: 10px;
+}
+
+footer ul > li > a {
+    font-size: 1.1em;
+    font-weight: 600;
+    color: var(--cor-semedestaque);
+}
+
+footer ul + p {
+    text-align: left;
+}
+
+footer ul > li > a:hover {
+    color: var(--cor-meio-termo);
+}
+
+footer p > em {
+    font-weight: 500;
+}
+
 @media screen AND (min-width: 768PX) {
     #carousel {
         width: 50vw;
+    }
+
+    footer ul > li {
+        text-align: right;
+    }
+
+    footer ul + p {
+        text-align: right;
     }
 }
