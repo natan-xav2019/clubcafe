@@ -151,12 +151,12 @@ main div.caixa > p {
 }
 
 footer {
-    background-color: rgb(238, 255, 238);
+    background-color: rgb(235, 222, 167);
     padding: 100px 10px 10px 10px;
 }
 
 footer > section.container > div.row {
-    border-bottom: 2px solid greenyellow;
+    border-bottom: 2px solid rgb(204, 161, 96);
 }
 
 footer h4 {
